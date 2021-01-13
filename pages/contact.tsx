@@ -11,8 +11,7 @@ const Contact = () => {
     const variables = {
       from_name: data.name,
       message_html: data.comment,
-      reply_to: data.email,
-      from_email: data.email
+      reply_to: data.email
     }
 
     send(serviceId, templateId, variables, userId)
