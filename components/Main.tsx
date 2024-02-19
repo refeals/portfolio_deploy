@@ -4,7 +4,7 @@ import { Download } from "lucide-react"
 
 export function Main() {
   return (
-    <main className="lg:w-2/3 lg:py-24 flex flex-col gap-6 md:gap-8">
+    <main className="lg:w-2/3 lg:py-24 flex flex-col gap-12 md:gap-8">
       <section id="intro" className="flex flex-col gap-2">
         <p>
           Dediquei 7+ anos de experiência profissional ao desenvolvimento web,
