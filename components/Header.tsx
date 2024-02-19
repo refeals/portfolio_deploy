@@ -2,9 +2,9 @@ import { Github, Linkedin, Mail } from "lucide-react"
 
 export function Header() {
   return (
-    <header className="lg:w-1/2 lg:sticky lg:top-0 lg:self-start lg:py-24 lg:max-h-screen lg:h-svh flex flex-col justify-between mb-3 md:mb-0">
+    <header className="lg:flex-1 lg:sticky lg:top-0 lg:self-start lg:py-24 lg:max-h-screen lg:h-svh flex flex-col justify-between mb-3 md:mb-0">
       <div>
-        <h1 className="text-3xl md:mb-1">Rafael Siqueira</h1>
+        <h1 className="text-4xl md:mb-2">Rafael Siqueira</h1>
         <h2 className="text-lg mb-2 md:mb-4">Software Engineer</h2>
         <p className="underline mb-2">
           <a href="mailto:rafaelsiqueira.dev@gmail.com">
