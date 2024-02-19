@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div className="flex min-h-svh flex-col lg:flex-row lg:items-center lg:justify-between lg:relative max-w-screen-xl mx-auto px-6 p-6 md:p-0">
       <div className="lg:flex lg:justify-between lg:gap-4">
-        <header className="lg:w-1/2 lg:sticky lg:top-0 lg:self-start lg:py-24 lg:max-h-screen lg:h-svh flex flex-col justify-between mb-8 md:mb-0">
+        <header className="lg:w-1/2 lg:sticky lg:top-0 lg:self-start lg:py-24 lg:max-h-screen lg:h-svh flex flex-col justify-between mb-3 md:mb-0">
           <div>
             <h1 className="text-3xl md:mb-2">Rafael Siqueira</h1>
             <h2 className="text-lg mb-2 md:mb-8">
@@ -87,7 +87,7 @@ export default function Home() {
           </ul>
         </header>
 
-        <main className="lg:w-1/2 lg:py-24 flex flex-col gap-8">
+        <main className="lg:w-1/2 lg:py-24 flex flex-col gap-6 md:gap-8">
           <section id="intro" className="flex flex-col">
             <p>
               Introduction Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -128,9 +128,9 @@ type ExperienceProps = {
 
 const Experience = ({ title, subtitle, date, tags, url }: ExperienceProps) => {
   return (
-    <div className="mb-12 block">
+    <div className="mb-6 md:mb-12 block">
       <div className="md:grid md:grid-cols-experiences md:gap-10">
-        <p className="text-sm pt-2 italic">{date}</p>
+        <p className="text-sm pt-2 italic float-right md:float-none">{date}</p>
         <div>
           <p className="text-lg">
             <a
