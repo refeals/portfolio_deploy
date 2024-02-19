@@ -88,12 +88,18 @@ export default function Home() {
         </header>
 
         <main className="lg:w-1/2 lg:py-24 flex flex-col gap-6 md:gap-8">
-          <section id="intro" className="flex flex-col">
+          <section id="intro" className="flex flex-col gap-2">
             <p>
-              Introduction Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Qui labore minus temporibus quas aliquam provident iste at
-              nesciunt fuga molestias ut sed a quod, ea quidem soluta nulla,
-              totam adipisci?
+              Dediquei 7+ anos de experiência profissional ao desenvolvimento
+              web, com foco no frontend e com especialização em React JS.
+            </p>
+            <p>
+              Cientista da computação por formação na USP de São Carlos, sou
+              apaixonado por programação. Aprendi a programar ainda quando
+              criança e desde então venho aperfeiçoando meu conhecimento.
+            </p>
+            <p>
+              Acredito no uso da tecnologia para melhorar a vida das pessoas!
             </p>
           </section>
 
