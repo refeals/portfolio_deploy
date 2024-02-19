@@ -9,7 +9,7 @@ const experiences = [
     title: "Afya - iClinic",
     subtitle: "Senior Frontend Engineer",
     date: "Mar 2023 - Jan 2024",
-    tags: "React, Typescript, Javascript, NextJS, styled-components, CSS, Eslint, Prettier, Docusaurus, Webpack, Python, Django, i18n",
+    tags: "React, Typescript, Javascript, NextJS, styled-components, CSS, ShadCDN, Tailwind, Eslint, Prettier, Vite, Vitest, Jest, Cypress, Docker, Mixpanel, Growthbook, Google Ad Manager",
     url: "https://iclinic.com.br/",
   },
   {
