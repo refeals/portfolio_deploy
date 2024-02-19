@@ -44,12 +44,14 @@ const experiences = [
 
 export default function Home() {
   return (
-    <div className="flex min-h-svh flex-col lg:flex-row lg:items-center lg:justify-between lg:relative max-w-screen-xl mx-auto px-6">
+    <div className="flex min-h-svh flex-col lg:flex-row lg:items-center lg:justify-between lg:relative max-w-screen-xl mx-auto px-6 pt-6 md:p-0">
       <div className="lg:flex lg:justify-between lg:gap-4">
-        <header className="lg:w-1/2 lg:sticky lg:top-0 lg:self-start lg:py-24 lg:max-h-screen flex flex-col justify-between lg:h-svh">
+        <header className="lg:w-1/2 lg:sticky lg:top-0 lg:self-start lg:py-24 lg:max-h-screen lg:h-svh flex flex-col justify-between mb-8 md:mb-0">
           <div>
-            <h1 className="text-3xl mb-2">Rafael Siqueira</h1>
-            <h2 className="text-lg mb-8">Software Engineer, Web Developer</h2>
+            <h1 className="text-3xl md:mb-2">Rafael Siqueira</h1>
+            <h2 className="text-lg mb-2 md:mb-8">
+              Software Engineer, Web Developer
+            </h2>
           </div>
 
           {/* <Image
@@ -58,7 +60,7 @@ export default function Home() {
             className="rounded-full w-1/2"
           /> */}
 
-          <ul className="flex gap-2">
+          <ul className="flex gap-2 justify-center md:justify-normal">
             <li className="p-2 rounded-full hover:bg-white hover:bg-opacity-20 transition-colors">
               <a
                 href="https://github.com/refeals"
@@ -127,7 +129,7 @@ type ExperienceProps = {
 const Experience = ({ title, subtitle, date, tags, url }: ExperienceProps) => {
   return (
     <div className="mb-12 block">
-      <div className="grid grid-cols-experiences gap-10">
+      <div className="md:grid md:grid-cols-experiences md:gap-10">
         <p className="text-sm pt-2 italic">{date}</p>
         <div>
           <p className="text-lg">
