@@ -44,7 +44,7 @@ const experiences = [
 
 export default function Home() {
   return (
-    <div className="flex min-h-svh flex-col lg:flex-row lg:items-center lg:justify-between lg:relative max-w-screen-xl mx-auto px-6 pt-6 md:p-0">
+    <div className="flex min-h-svh flex-col lg:flex-row lg:items-center lg:justify-between lg:relative max-w-screen-xl mx-auto px-6 p-6 md:p-0">
       <div className="lg:flex lg:justify-between lg:gap-4">
         <header className="lg:w-1/2 lg:sticky lg:top-0 lg:self-start lg:py-24 lg:max-h-screen lg:h-svh flex flex-col justify-between mb-8 md:mb-0">
           <div>
