@@ -87,16 +87,12 @@ export default function Home() {
 
         <main className="lg:w-1/2 lg:py-24 flex flex-col gap-8">
           <section id="intro" className="flex flex-col">
-            <h3 className="text-2xl">Introdução</h3>
-
-            <div className="flex">
-              <p>
-                Introduction Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Qui labore minus temporibus quas aliquam provident iste at
-                nesciunt fuga molestias ut sed a quod, ea quidem soluta nulla,
-                totam adipisci?
-              </p>
-            </div>
+            <p>
+              Introduction Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Qui labore minus temporibus quas aliquam provident iste at
+              nesciunt fuga molestias ut sed a quod, ea quidem soluta nulla,
+              totam adipisci?
+            </p>
           </section>
 
           <section id="experiences" className="flex flex-col">
@@ -130,13 +126,20 @@ type ExperienceProps = {
 
 const Experience = ({ title, subtitle, date, tags, url }: ExperienceProps) => {
   return (
-    <a href={url} target="_blank" rel="noopener" className="mb-12 block">
+    <div className="mb-12 block">
       <div className="grid grid-cols-experiences gap-10">
         <p className="text-sm pt-2 italic">{date}</p>
         <div>
-          <p className="text-lg flex gap-2 items-center">
-            <span className="font-bold">{title}</span>
-            <ExternalLink size={18} />
+          <p className="text-lg">
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener"
+              className="flex gap-2 items-center"
+            >
+              <span className="font-bold">{title}</span>
+              <ExternalLink size={18} />
+            </a>
           </p>
           <p className="">{subtitle}</p>
 
@@ -149,6 +152,6 @@ const Experience = ({ title, subtitle, date, tags, url }: ExperienceProps) => {
           </div>
         </div>
       </div>
-    </a>
+    </div>
   )
 }
