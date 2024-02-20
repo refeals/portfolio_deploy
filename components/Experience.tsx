@@ -38,7 +38,7 @@ export function Experience({
           <p className="font-semibold">{subtitle}</p>
         </div>
 
-        <ul className="opacity-75 text-md py-2 list-disc pl-4 flex flex-col gap-2 leading-relaxed sm:col-[2/4] order-3">
+        <ul className="opacity-75 text-md pb-2 list-disc pl-4 flex flex-col gap-2 leading-relaxed sm:col-[2/4] order-3">
           {contentBr.map((c, i) => (
             <li key={i}>{c}</li>
           ))}

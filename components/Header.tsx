@@ -21,7 +21,7 @@ export function Header() {
           className="rounded-full w-1/2 self-center"
         />
 
-        <ul className="flex gap-2 justify-between sm:px-4">
+        <ul className="flex flex-col gap-2 w-fit self-center">
           <HeaderLink
             Icon={Github}
             url="https://github.com/refeals"
