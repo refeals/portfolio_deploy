@@ -46,7 +46,10 @@ export function Experience({
 
         <div className="flex flex-wrap gap-1 mt-1 sm:mt-0 sm:col-[2/4] order-4 text-justify">
           {tags.split(", ").map((t) => (
-            <span key={t} className="bg-slate-500 rounded-md px-1 text-sm">
+            <span
+              key={t}
+              className="bg-slate-500 rounded-md px-1 text-sm leading-relaxed"
+            >
               {t}
             </span>
           ))}
