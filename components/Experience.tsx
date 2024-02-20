@@ -19,7 +19,7 @@ export function Experience({
 }: ExperienceProps) {
   return (
     <div className="mb-8 sm:mb-12 block">
-      <div className="grid gap-1 sm:gap-x-8 sm:gap-y-2">
+      <div className="grid sm:grid-cols-experiences gap-1 sm:gap-x-8 sm:gap-y-2">
         <p className="text-sm pt-2 italic font-medium order-2 sm:order-1">
           {date}
         </p>
