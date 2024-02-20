@@ -18,11 +18,13 @@ export function Experience({
   contentBr,
 }: ExperienceProps) {
   return (
-    <div className="mb-6 sm:mb-12 block">
-      <div className="grid sm:grid-cols-experiences sm:gap-10">
-        <p className="text-sm pt-2 italic">{date}</p>
-        <div>
-          <p className="text-lg">
+    <div className="mb-8 sm:mb-12 block">
+      <div className="grid gap-1 sm:gap-x-8 sm:gap-y-2">
+        <p className="text-sm pt-2 italic font-medium order-2 sm:order-1">
+          {date}
+        </p>
+        <div className="order-1 sm:order-2">
+          <p className="text-xl leading-relaxed">
             <a
               href={url}
               target="_blank"
@@ -33,21 +35,22 @@ export function Experience({
               <ExternalLink size={18} />
             </a>
           </p>
-          <p className="">{subtitle}</p>
-
-          <ul className="opacity-70 text-sm py-2 list-disc pl-4 flex flex-col gap-2 leading-relaxed">
-            {contentBr.map((c, i) => (
-              <li key={i}>{c}</li>
-            ))}
-          </ul>
+          <p className="font-semibold">{subtitle}</p>
         </div>
-      </div>
-      <div className="flex flex-wrap gap-1 mt-2 sm:mt-4">
-        {tags.split(", ").map((t) => (
-          <span key={t} className="bg-slate-500 rounded-md px-1.5 text-sm">
-            {t}
-          </span>
-        ))}
+
+        <ul className="opacity-75 text-md py-2 list-disc pl-4 flex flex-col gap-2 leading-relaxed sm:col-[2/4] order-3">
+          {contentBr.map((c, i) => (
+            <li key={i}>{c}</li>
+          ))}
+        </ul>
+
+        <div className="flex flex-wrap gap-1 mt-1 sm:mt-0 sm:col-[2/4] order-4 text-justify">
+          {tags.split(", ").map((t) => (
+            <span key={t} className="bg-slate-500 rounded-md px-1 text-sm">
+              {t}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   )
