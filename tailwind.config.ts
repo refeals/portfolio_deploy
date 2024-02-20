@@ -16,6 +16,12 @@ const config: Config = {
       gridTemplateColumns: {
         experiences: "150px 1fr",
       },
+      colors: {
+        primary: "rgb(15, 23, 42)",
+      },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   plugins: [],

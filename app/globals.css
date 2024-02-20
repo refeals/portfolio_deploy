@@ -17,13 +17,13 @@
 } */
 
 :root {
-  --foreground-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255, 0.9;
   --background-start-rgb: 15, 23, 42, 1;
   --background-end-rgb: 8, 15, 25, 1;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgba(var(--foreground-rgb));
   background: rgb(15, 23, 42);
   background: linear-gradient(135deg, rgba(var(--background-start-rgb)) 0%, rgba(var(--background-end-rgb)) 100%);
 }
