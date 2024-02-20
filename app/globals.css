@@ -18,16 +18,14 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 15, 23, 42;
-  --background-end-rgb: 7, 12, 20;
+  --background-start-rgb: 15, 23, 42, 1;
+  --background-end-rgb: 8, 15, 25, 1;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  /* background-color: rgb(15, 23, 42); */
+  background: rgb(15, 23, 42);
+  background: linear-gradient(135deg, rgba(var(--background-start-rgb)) 0%, rgba(var(--background-end-rgb)) 100%);
 }
 
 @layer utilities {
