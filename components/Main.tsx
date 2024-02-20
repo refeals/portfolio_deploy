@@ -4,8 +4,8 @@ import { Download } from "lucide-react"
 
 export function Main() {
   return (
-    <main className="lg:w-2/3 lg:py-24 flex flex-col gap-24 md:gap-8">
-      <section id="intro" className="flex flex-col gap-2">
+    <main className="lg:w-2/3 lg:py-24 flex flex-col gap-24 sm:gap-8">
+      <section id="intro" className="flex flex-col gap-2 leading-relaxed">
         <p>
           Dediquei 7+ anos de experiência profissional ao desenvolvimento web,
           com foco no frontend e com especialização em React JS.
@@ -19,7 +19,7 @@ export function Main() {
       </section>
 
       <section id="experiences" className="flex flex-col">
-        <div className="mt-2 flex flex-col gap-12 md:gap-0">
+        <div className="mt-2 flex flex-col gap-12 sm:gap-0">
           {experiencesData.map((xp) => (
             <Experience key={xp.title} {...xp} />
           ))}

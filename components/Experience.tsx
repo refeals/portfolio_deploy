@@ -18,9 +18,9 @@ export function Experience({
   contentBr,
 }: ExperienceProps) {
   return (
-    <div className="mb-6 md:mb-12 block">
-      <div className="md:grid md:grid-cols-experiences md:gap-10">
-        <p className="text-sm pt-2 italic float-right md:float-none">{date}</p>
+    <div className="mb-6 sm:mb-12 block">
+      <div className="grid sm:grid-cols-experiences sm:gap-10">
+        <p className="text-sm pt-2 italic">{date}</p>
         <div>
           <p className="text-lg">
             <a
@@ -35,20 +35,19 @@ export function Experience({
           </p>
           <p className="">{subtitle}</p>
 
-          <ul className="opacity-70 text-sm py-2 list-disc pl-4 flex flex-col gap-2">
+          <ul className="opacity-70 text-sm py-2 list-disc pl-4 flex flex-col gap-2 leading-relaxed">
             {contentBr.map((c, i) => (
               <li key={i}>{c}</li>
             ))}
           </ul>
-
-          <div className="flex flex-wrap gap-1 mt-2 md:mt-4">
-            {tags.split(", ").map((t) => (
-              <span key={t} className="bg-slate-500 rounded-md px-1.5 text-sm">
-                {t}
-              </span>
-            ))}
-          </div>
         </div>
+      </div>
+      <div className="flex flex-wrap gap-1 mt-2 sm:mt-4">
+        {tags.split(", ").map((t) => (
+          <span key={t} className="bg-slate-500 rounded-md px-1.5 text-sm">
+            {t}
+          </span>
+        ))}
       </div>
     </div>
   )

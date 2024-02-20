@@ -19,7 +19,7 @@ export const experiencesData = [
   {
     title: "Uber Eats",
     subtitle: "Senior Frontend Engineer",
-    date: "Apr 2022 - Feb 2023",
+    date: "Abr 2022 - Fev 2023",
     tags: "React, Typescript, Flow, Javascript, styled-components, CSS, Eslint, Prettier, Base Web, i18n",
     url: "https://www.ubereats.com/",
     contentBr: [
@@ -34,7 +34,7 @@ export const experiencesData = [
   {
     title: "Cornershop by Uber",
     subtitle: "Senior Frontend Engineer",
-    date: "Apr 2021 - Apr 2022",
+    date: "Abr 2021 - Abr 2022",
     tags: "React, Typescript, Javascript, NextJS, styled-components, CSS, Eslint, Prettier, Docusaurus, Webpack, Python, Django, i18n",
     url: "https://cornershopapp.com/",
     contentBr: [
